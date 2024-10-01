@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "name": "Full Speed Ad",
+    "version": "1.0",
+    "description": "Detecta automaticamente quando um anúncio estiver na tela, e acelera o vídeo ao máximo.",
+    "permissions": [],
+    "content_scripts": [
+      {
+        "matches": ["*://*.youtube.com/*"],
+        "js": ["./scripts/speed-ad-mozilla.js"]
+      }
+    ]
+  }
+  
